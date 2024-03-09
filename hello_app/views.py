@@ -35,7 +35,7 @@ def calculate_hash():
 
         # Prepare response
         response = {'hash_value': data}
-        return jsonify(response)
+        return render_template("hash_calc.html")
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
