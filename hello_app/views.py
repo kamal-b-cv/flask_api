@@ -3,9 +3,9 @@ from flask import Flask, render_template,request, jsonify
 import hashlib
 from . import app
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 # @app.route("/hello/")
 # @app.route("/hello/<name>")
